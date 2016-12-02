@@ -10,7 +10,7 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 /**
  * ContentTaskManagerCoreBundle
  *
- * @package   nodetree-engine
+ * @package   node-tree-engine
  * @author    Xavier Arnaus <xavier@arnaus.net>
  * @since     2016-12-02
  */
