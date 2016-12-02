@@ -1,4 +1,11 @@
 <?php
+/**
+ * NodeTreeEngineExtension
+ *
+ * @package   node-tree-engine
+ * @author    Xavier Arnaus <xavier@arnaus.net>
+ * @since     2016-12-02
+ */
 
 namespace NodeTreeEngine\Bundle\DependencyInjection;
 
@@ -7,13 +14,6 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 
-/**
- * ContentTaskManagerCoreBundle
- *
- * @package   node-tree-engine
- * @author    Xavier Arnaus <xavier@arnaus.net>
- * @since     2016-12-02
- */
 class NodeTreeEngineExtension extends Extension
 {
 	public function load(array $config, ContainerBuilder $container)
