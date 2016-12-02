@@ -1,0 +1,48 @@
+{
+    "name": "XaviArnaus/NodeTreeEngine",
+    "description": "Provide a NodeTree runner engine and the needed Interfaces for creating Nodes.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Xavier Arnaus",
+            "email": "xavier@arnaus.net",
+            "role": "Maintainer"
+        }
+    ],
+    "license": "proprietary",
+    "require": {
+        "php": "^5.6.0|~7.0",
+        "symfony/http-kernel": "~3.0",
+        "symfony/dependency-injection": "~3.0",
+        "symfony/config": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.2",
+        "phpunit/dbunit": "^2.0",
+        "symfony/framework-bundle": "~3.0"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": ["tests/integration", "tests/unit"]
+        }
+    },
+    "config": {
+        "bin-dir": "bin",
+        "secure-http": false
+    },
+    "scripts": {
+        "test": "bin/phpunit -c tests/phpunit.xml",
+        "quicktest": "bin/phpunit -c tests/phpunit_quicktest.xml",
+        "integration": "bin/phpunit -c tests/phpunit_integration.xml",
+        "post-install-cmd": [
+        ],
+        "post-update-cmd": [
+        ]
+    }
+}
